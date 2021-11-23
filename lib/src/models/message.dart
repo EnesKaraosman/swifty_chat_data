@@ -1,7 +1,9 @@
+import 'package:equatable/equatable.dart';
+
 import './chat_user.dart';
 import './message_kind.dart';
 
-abstract class Message {
+abstract class Message extends Equatable {
   final ChatUser user;
   final String id;
   final bool isMe;
@@ -13,4 +15,7 @@ abstract class Message {
     required this.isMe,
     required this.messageKind,
   });
+
+  @override
+  List<Object?> get props => [id];
 }
