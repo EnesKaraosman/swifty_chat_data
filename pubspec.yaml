@@ -1,10 +1,10 @@
 name: swifty_chat_data
 description: Data package for the swifty_chat package.
-version: 0.0.2
+version: 0.1.0
 repository: https://github.com/EnesKaraosman/swifty_chat_data
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.3 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
