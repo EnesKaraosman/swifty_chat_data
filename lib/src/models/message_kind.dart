@@ -4,13 +4,6 @@ import '../models/carousel_item.dart';
 import '../models/quick_reply_item.dart';
 
 class MessageKind {
-  String? text;
-  ImageProvider? imageProvider;
-  String? htmlData;
-  List<QuickReplyItem> quickReplies = [];
-  List<CarouselItem> carouselItems = [];
-  dynamic custom;
-
   /// Represents text on the screen.
   MessageKind.text(this.text);
 
@@ -27,4 +20,11 @@ class MessageKind {
   MessageKind.carousel(this.carouselItems);
 
   MessageKind.custom(this.custom);
+
+  String? text;
+  ImageProvider? imageProvider;
+  String? htmlData;
+  List<QuickReplyItem> quickReplies = [];
+  List<CarouselItem> carouselItems = [];
+  dynamic custom;
 }

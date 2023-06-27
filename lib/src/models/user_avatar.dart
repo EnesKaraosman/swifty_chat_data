@@ -16,6 +16,12 @@ extension AvatarAlignment on AvatarPosition {
 }
 
 class UserAvatar {
+  UserAvatar({
+    required this.imageProvider,
+    this.size = 40,
+    this.position = AvatarPosition.center,
+  });
+
   /// Profile imageProvider (Network/Asset)
   final ImageProvider imageProvider;
 
@@ -24,10 +30,4 @@ class UserAvatar {
 
   /// AvatarPosition, related with message (top, center, bottom)
   final AvatarPosition position;
-
-  UserAvatar({
-    required this.imageProvider,
-    this.size = 40,
-    this.position = AvatarPosition.center,
-  });
 }
